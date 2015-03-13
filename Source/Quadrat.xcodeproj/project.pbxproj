@@ -330,10 +330,11 @@
 				TargetAttributes = {
 					476B70881A0EBAE700AFAC33 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = VZ266K5KCR;
 					};
 					476B70D91A0EBBA500AFAC33 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 6E9832W2ZK;
+						DevelopmentTeam = VZ266K5KCR;
 					};
 				};
 			};
