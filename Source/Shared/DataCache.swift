@@ -121,7 +121,7 @@ class DataCache {
         #if os(iOS)
             
             let center = NotificationCenter.default
-        let didEnterBackground = UIApplication.didEnterBackgroundNotification
+        let didEnterBackground = NSNotification.Name.UIApplicationDidEnterBackground
             let firstObserver = center.addObserver(forName: didEnterBackground, object: nil, queue: nil) {
                 [weak self] (notification) -> Void in
                 self?.cleanupCache()
@@ -129,7 +129,7 @@ class DataCache {
             }
             self.observers.append(firstObserver)
             
-        let didReceiveMemoryWaring = UIApplication.didReceiveMemoryWarningNotification
+        let didReceiveMemoryWaring = NSNotification.Name.UIApplicationDidReceiveMemoryWarning
             let secondObserver = center.addObserver(forName: didReceiveMemoryWaring, object: nil, queue: nil) {
                 [weak self] (notification) -> Void in
                 self?.cache.removeAllObjects()
