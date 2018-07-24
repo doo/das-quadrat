@@ -312,7 +312,7 @@
 				476B70D61A0EBBA500AFAC33 /* Frameworks */,
 				476B70D71A0EBBA500AFAC33 /* Headers */,
 				476B70D81A0EBBA500AFAC33 /* Resources */,
-				478F196B1C328C08003A500A /* ShellScript */,
+				478F196B1C328C08003A500A /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -394,15 +394,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-		478F196B1C328C08003A500A /* ShellScript */ = {
+		478F196B1C328C08003A500A /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
