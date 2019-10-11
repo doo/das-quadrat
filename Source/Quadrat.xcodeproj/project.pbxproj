@@ -293,7 +293,6 @@
 				476B70851A0EBAE700AFAC33 /* Frameworks */,
 				476B70861A0EBAE700AFAC33 /* Headers */,
 				476B70871A0EBAE700AFAC33 /* Resources */,
-				4702C80F1C32B2C000A742A5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -312,7 +311,6 @@
 				476B70D61A0EBBA500AFAC33 /* Frameworks */,
 				476B70D71A0EBBA500AFAC33 /* Headers */,
 				476B70D81A0EBBA500AFAC33 /* Resources */,
-				478F196B1C328C08003A500A /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -382,38 +380,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4702C80F1C32B2C000A742A5 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "
-";
-		};
-		478F196B1C328C08003A500A /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "
-";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		476B70841A0EBAE700AFAC33 /* Sources */ = {
@@ -576,11 +542,13 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_BUNDLE_IDENTIFIER = net.fry.QuadratTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -669,11 +637,13 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_BUNDLE_IDENTIFIER = net.fry.QuadratTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -848,6 +818,7 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_BUNDLE_IDENTIFIER = net.fry.QuadratTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -871,6 +842,7 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_BUNDLE_IDENTIFIER = net.fry.QuadratTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -964,11 +936,13 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_BUNDLE_IDENTIFIER = net.fry.QuadratTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1057,11 +1031,13 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LLVM_LTO = YES_THIN;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_BUNDLE_IDENTIFIER = net.fry.QuadratTouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
